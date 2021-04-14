@@ -1,0 +1,19 @@
+<template>
+
+	<lightning-card title="Todo Component" icon-name="standard:product_consumed">
+		<div class="slds-var-m-around_medium">
+
+			<lightning-input name="name" label="Item Name" onchange={handleNameChange}></lightning-input>
+			<lightning-input name="description" label="Description" onchange={handleDescriptionChange}></lightning-input>
+			<div class="slds-var-p-vertical_small">
+				<lightning-button label="Add Todo" variant="brand" onclick={handleSave}></lightning-button>
+			</div>
+
+			<div>
+				<c-child todos={todos}></c-child>
+			</div>
+
+		</div>
+	</lightning-card>
+
+</template>

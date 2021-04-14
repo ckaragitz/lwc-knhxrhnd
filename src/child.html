@@ -1,0 +1,11 @@
+<template>
+
+	<template for:each={list} for:item="todo">
+		<ul key={todo.id}>
+			<p>{todo.name}</p>
+			<p>{todo.description}</p>
+			<hr>
+		</ul>
+	</template>
+
+</template>
